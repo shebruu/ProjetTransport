@@ -1,0 +1,294 @@
+body {
+    height: 300px;
+    display: grid;
+    gap: 10px;
+
+    padding: 10px;
+    grid-template-columns: auto 20%;
+    grid-template-rows: 30% auto 30%;
+    grid-template-areas:
+        "header nav"
+        "main main "
+        "footer footer";
+
+}
+
+header {
+    grid-area: header;
+
+    height: 30%;
+    display: inline-block;
+
+
+}
+
+#start {
+    border: 1px solid aqua;
+    text-align: start;
+    padding: 10px 20px;
+
+}
+
+nav {
+    grid-area: nav;
+    align-self: center;
+
+    position: fixed;
+    right: 4%;
+    font-size: large;
+
+
+}
+
+nav ul li {
+    list-style: none;
+    display: inline-block;
+    margin-right: 20px;
+
+
+}
+
+nav ul li a {
+    text-decoration: none;
+
+
+
+}
+
+main {
+    grid-area: main;
+    display: grid;
+
+    padding: 20px;
+
+    grid-template-columns: 60% 40%;
+    grid-template-rows: 100%;
+    grid-template-areas: "section article";
+    text-align: center;
+
+
+}
+
+
+article {
+    grid-area: article;
+    display: flex;
+    flex-direction: column;
+   align-items: center;
+
+    border: solid;
+    text-align: start;
+    font-size: x-large;
+
+}
+
+
+
+#btsuite {
+
+    text-align: center;
+    vertical-align: center;
+    border: none;
+    width: max-content;
+    width: 50px;
+    height: 40px;
+    text-align: center;
+    float: right;
+
+
+}
+
+
+
+.two {
+    display: inline-table;
+    justify-content: center;
+    width: 20%;
+    padding-left: 15px;
+    margin-left: 15px;
+
+    font-style: italic;
+    background-color: lightgray;
+}
+
+.tree {
+
+    width: 20%;
+    padding-left: 15px;
+    margin-left: 15px;
+    float: inline-end;
+
+    font-style: italic;
+    background-color: lightgray;
+
+}
+
+span {
+    font-size: larger;
+}
+
+aside {
+    width: 30%;
+    padding-left: 15px;
+    margin-left: 15px;
+    float: right;
+    font-style: italic;
+    background-color: lightgray;
+
+}
+
+
+p {
+    font-size: large;
+}
+
+section {
+    grid-area: section;
+    border: solid;
+    text-align: start;
+    overflow: hidden;
+
+}
+
+#photo {
+
+    max-width: 100%;
+    height: auto;
+
+
+}
+
+footer {
+    grid-area: footer;
+    display: flex;
+    border: solid;
+    background-color: black;
+
+
+}
+
+table {
+    border: solid 2px orange;
+    width: auto;
+
+
+
+
+}
+
+h2 {
+    text-align: center;
+    font-family: 'Inter', sans-serif;
+}
+
+td {
+    width: 100px;
+    border: solid 2px steelblue;
+}
+
+
+.hide {
+    border: none;
+}
+
+.volumetitre,
+.distancetitre {
+    border: 2px solid black;
+
+}
+
+
+
+.volume,
+.distance {
+    border: 2px dotted red;
+}
+
+
+form {
+
+    display: block;
+
+    font-family: 'Inter', sans-serif;
+    font-size: medium;
+    max-width: 70%;
+
+}
+
+
+
+#titrefrm {
+    font-size: larger;
+    font-family: 'Inter', sans-serif;
+    font-weight: bold;
+}
+
+
+
+
+input[type="submit"] {
+    background-color: green;
+    color: white;
+    padding: 0.5rem;
+    border-radius: 5px;
+    cursor: pointer;
+
+    font-size: 1.2rem;
+}
+
+input[type="submit"]:before {
+    background-color: aqua;
+
+}
+
+input[type="submit"]:after {
+    background-color: blue;
+
+}
+
+input[type="submit"]:hover {
+    background-color: red;
+}
+
+input[type="submit"]:focus {
+    background-color: pink;
+
+}
+
+
+
+
+#photos {
+    display: table-cell;
+
+    border: none;
+
+}
+
+#photo1 {
+    float: inline-end;
+    border: none;
+}
+
+#photo2 {
+    border: none;
+}
+
+#photo3 {
+    border: none;
+    float: right;
+}
+
+.videocontainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+@media all and (max-width:560px) {
+    #photo {
+        width: 50%;
+    }
+}

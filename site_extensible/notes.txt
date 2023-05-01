@@ -1,0 +1,86 @@
+text decoration :none : pr ne pas avoir des liens soulignees 
+list style none : pr ne pas avoir les ptits points 
+scroll behavior
+
+display=none; pour cacher 
+
+media query :
+
+
+type :all                                = (screen (gd ecran), handeld (=mobile), print (pour imprimer), projection )
+@media type and (max-width=500px) 
+{
+si navigateur  est moins que ce max , instructions (petite fenetre )  
+}
+
+and :                                  dit sur ql genre de fenetre on est dnc c est une 2 ieme condition  (and, only, not )
+critere =                             (max-width, height, orientation)
+
+Pour un site responsive ,
+structurer la pg html avec des grilles : header nav   main section   section ul li 
+  footer 
+
+pour la structure : 
+body {display : grid 
+voir slide 171
+
+
+ utiliser des mediaquerys : 
+/* Style pour tous les écrans */
+body {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+h1 {
+  font-size: 2.5em;
+  margin-bottom: 1em;
+}
+
+/* Style pour les écrans de taille moyenne */
+@media (min-width: 768px) {
+  body {
+    font-size: 18px;
+  }
+
+  h1 {
+    font-size: 3.5em;
+    margin-bottom: 2em;
+  }
+}
+
+/* Style pour les grands écrans */
+@media (min-width: 1200px) {
+  body {
+    font-size: 20px;
+  }
+
+  h1 {
+    font-size: 4.5em;
+    margin-bottom: 3em;
+  }
+}
+
+
+QUESTİON PROF :  comment recuperer une structure qui s etend sur toute la page apres avoir deja divisé toutes mon main a l aide du grid template?
+comment mettre au milieu ma table de prix ?
+
+commennt mettre mon side en mode rectangle superposé ? 
+
+
+
+pour site flexible : ne pas confondre site responsive et site flexible. site responsive c est qd les elements vont l une a la suite de l autre ds un mobile --> 1 page de ça 
+
+
+site flexible : un site dont la disposition ne change pas mais la taille diminue en fct de la taille de l ecran le texte retrecit  
+(par defaut c est la disposition block qui est utilisee si on ne precise pas. (sauf pour les balises inline par nature)).
+un display block  prend toute la ligne disponible 
+
+site flexible
+acceuil, formulaire, tableau , image , js , iframe , map, superposition
+
+
+site fixe : on pt prendre le meme code
+
+          
